@@ -1,0 +1,244 @@
+/* bootstrap css*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+header{
+    margin-bottom: 10%;
+}
+
+.navbar{
+    border-bottom: 2px solid #FA4A0C;
+}
+
+.navbar-nav a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease-in-out;   
+}
+
+.navbar-nav a:hover::after{
+    width: 100%;
+    background: #FA4A0C;    
+}
+
+#logo1{
+    margin: 25px 0 25px 0;
+}
+
+#navbarNavAltMarkup{
+    margin: 0 55px 0 0;
+}
+
+#home{
+    color: white;
+    background-color: #FA4A0C;
+    border-radius: 3px;
+}
+
+#home::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease-in-out;
+}
+
+#home:hover::after{
+    width: 100%;
+    background: white;
+}
+
+#cover{
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+.text-head1{ 
+    font-family: 'Montserrat', sans-serif;  
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: aliceblue;
+}
+
+.text-head2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    color: aliceblue;
+}
+
+.card-img-overlay{
+    background-color: rgba(29, 29, 29, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titre-bann{
+    margin-top: 2%;
+    padding: 2%;
+}
+
+/*main*/
+
+.article{
+    border: 3px solid #fa4a0c;
+    padding: 10px;
+}
+
+.article > div > p{
+    margin-top: 1rem;
+}
+
+.button{  
+    font-family: 'Montserrat', sans-serif;  
+    padding: 12px 40px 12px 40px;
+    border-radius: 30px;
+    background: #FA4A0C;
+    box-shadow: 0px 10px 30px rgba(124, 19, 9, 0.2);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.button:hover{
+    padding: 10px 38px 10px 38px;
+    background:white;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+    text-align: center;
+    color: #FA4A0C;
+    border: 2px solid #FA4A0C;
+    font-size: 24px;
+    cursor: pointer;
+    }
+    
+.text-article{
+    font-family:'Montserrat', sans-serif;
+}
+
+/*footer*/
+
+footer{
+    margin-top: 10%;
+}
+
+.text-foot1{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    color: aliceblue;
+}
+
+.social-link a{
+    list-style-type: none;
+    margin: 0 5%;
+}
+
+.copyright{
+    margin: 0;
+}
+
+/*media*/
+
+@media all and (max-width: 845px){
+    .text-head1{   
+        margin: 0;
+        font-size: small;
+        letter-spacing: 0.1px;
+        color: aliceblue;
+    }
+    
+    .text-head2{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+
+    .text-foot1{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+
+    .copyright{
+        font-size: x-small;
+    }
+}
+
+@media all and (max-width: 1280px){
+    .text-head1{   
+        margin: 0;
+        font-size: small;
+        letter-spacing: 0.1px;
+        color: aliceblue;
+    }
+    
+    .text-head2{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+
+    .text-foot1{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+
+    .copyright{
+        font-size: x-small;
+    }
+
+    .navbar-nav a:after{
+        display: none;
+    }
+
+    #home::after{
+        display: none;
+    }
+}
+
+@media (min-width:2560 px){
+
+    .text-head1{   
+        font-size: x-large;
+    }
+    
+    .text-head2{
+        font-size: xx-large;
+    }
+
+    .text-foot1{
+        font-size: xx-large;
+    }
+
+    .copyright{
+        font-size: large
+    }
+}
