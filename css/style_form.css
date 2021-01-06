@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Roboto&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+header {
+    margin-bottom: 5%;
+}
+
+.navbar {
+    border-bottom: 2px solid #FA4A0C;
+}
+
+.navbar-nav a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease-in-out;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+    background: #FA4A0C;
+}
+
+#logo1 {
+    margin: 25px 0 25px 0;
+}
+
+#navbarNavAltMarkup {
+    margin: 0 55px 0 0;
+}
+
+#home {
+    color: white;
+    background-color: #FA4A0C;
+    border-radius: 3px;
+}
+
+#home::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease-in-out;
+}
+
+#home:hover::after {
+    width: 100%;
+    background: white;
+}
+
+#cover {
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+.text-head1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: aliceblue;
+}
+
+.text-head2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    color: aliceblue;
+}
+
+.card-img-overlay {
+    background-color: rgba(29, 29, 29, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titre-bann {
+    margin-top: 2%;
+    padding: 2%;
+}
+
+/*main*/
+
+form {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 15% 1fr 25%;
+    padding: 0;
+}
+
+fieldset {
+    grid-column: 2/3;
+    padding: 0;
+    border: none;
+}
+
+fieldset p {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset legend {
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+fieldset h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+}
+
+hr {
+    border: none;
+    width: auto;
+}
+
+.hr1 {
+    grid-area: 2/2/3/3;
+}
+
+.hr2 {
+    grid-area: 4/2/5/3;
+}
+
+.commande h1 {
+    margin-bottom: 2%;
+}
+
+.choice {
+    margin-bottom: 5%;
+}
+
+.choicemain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+}
+
+.choicemain p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.choicemain div {
+    width: auto;
+}
+
+.choicebis {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.choicebis>div {
+    margin-right: 5%;
+}
+
+.choicebis select {
+    width: -webkit-fill-available;
+}
+
+.choicebis label {
+    margin-left: 2rem;
+}
+
+.formswitch {
+    display: flex;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos p {
+    display: flex;
+    flex-direction: column;
+}
+
+.info>legend {
+    margin-bottom: 2%;
+}
+
+.infos2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos2 p {
+    display: flex;
+    flex-direction: column;
+}
+
+.info2>legend {
+    margin-bottom: 2%;
+}
+
+.cardtype {
+    align-self: flex-start;
+    margin-bottom: 2%;
+}
+
+.cardinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardinfo div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.send {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#valid {
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    height: auto;
+    padding: 14px 32px 14px 32px;
+    border-radius: 5rem;
+    background: #FA4A0C;
+    box-shadow: 0px 1rem 3rem rgba(183, 50, 39, 0.2);
+    color: white;
+    border: 0;
+    text-align: center;
+    font-size: x-large;
+    transition: all 0.5s;
+}
+
+#valid:hover {
+    padding: 12px 30px 12px 30px;
+    background: white;
+    color: #FA4A0C;
+    border: 2px solid #FA4A0C;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*footer*/
+
+footer {
+    margin-top: 5%;
+}
+
+.text-foot1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    color: aliceblue;
+}
+
+.social-link a {
+    list-style-type: none;
+    margin: 0 5%;
+}
+
+.copyright {
+    margin: 0;
+}
+
+/*media*/
+
+@media all and (max-width: 992px) {
+    .navbar-nav a:after {
+        display: none;
+    }
+    #home::after {
+        display: none;
+    }
+    .text-head1 {
+        margin: 0;
+        font-size: medium;
+        letter-spacing: 0.1px;
+        color: aliceblue;
+    }
+    .text-head2 {
+        text-align: center;
+        font-size: x-large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+    #valid {
+        font-size: medium;
+        padding: 10px 25px 10px 25px;
+    }
+    #valid:hover {
+        padding: 8px 23px 8px 23px;
+    }
+    .text-foot1 {
+        text-align: center;
+        font-size: x-large;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+    .copyright {
+        font-size: small;
+    }
+    form {
+        grid-template-columns: 15% 1fr 15%;
+    }
+    .commande>legend {
+        text-align: center;
+    }
+    .choicemain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .choicemain p {
+        align-items: center;
+        justify-content: center;
+    }
+    .choicebis {
+        justify-content: center;
+    }
+    .infos {
+        text-align: center;
+    }
+    .infos div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .infos2 {
+        text-align: center;
+    }
+    .cardtype {
+        align-self: center;
+    }
+    .cardinfo {
+        align-self: center;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .navbar-nav a {
+        font-size: large;
+    }
+    .text-head1 {
+        font-size: 40px;
+    }
+    .text-head2 {
+        font-size: 60px;
+    }
+    .text-foot1 {
+        font-size: 60px;
+    }
+    .copyright {
+        font-size: 30px;
+    }
+}
+
+@media all and (min-width: 2160px) {
+    .navbar-nav a {
+        font-size: x-large;
+    }
+    .text-head1 {
+        font-size: 80px;
+    }
+    .text-head2 {
+        font-size: 120px;
+    }
+    .text-foot1 {
+        font-size: 120px;
+    }
+}
+
+/*input*/
+
+input[type="text"], [type="tel"] {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    width: fit-content;
+    height: 2rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    margin: 0 2rem 0 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid#3751FF;
+    background-color: white;
+}
+
+input[type="number"] {
+    height: 2rem;
+    width: fit-content;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    height: 2rem;
+    width: fit-content;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    margin-bottom: 2%;
+}
+
+.choicebis input {
+    margin: 0;
+    padding: 0;
+    height: 1em;
+}

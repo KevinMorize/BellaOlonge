@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Contact - Bella Olonje</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style_contact.css" />
+    <!-- Boot online -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!-- Boot offline -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light p-0">
+                <div class="container-fluid">
+
+                    <div id="logo1">
+                        <img src="../img/logo.png" class="img-fluid" />
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class=" text-center collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="Acceuil.html"
+                                id="home">Home</a>
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="Pizza.html"
+                                style="color:#FA4A0C">Pizza</a>
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="Salades.html"
+                                style="color:#FA4A0C">Salades</a>
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="Desserts.html"
+                                style="color:#FA4A0C">Desserts</a>
+                            <a class="nav-link active px-4 mx-3" aria-current="page" href="Contact.html"
+                                style="color:#FA4A0C">Contact</a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="card p-0 m-0" style="border: none">
+                <img src="../img/foot.jpg" class="img-fluid" id="cover" alt="cover"
+                    style="border: none; align-self: center">
+                <div class="card-img-overlay p-0">
+                    <div id="titre-bann">
+                        <p class="text-center text-head1">Food app</p>
+                        <p class="text-center mt-4 text-head2">Chez Bella<br>Chaque désir s'additionne.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <form>
+        <fieldset class="infos">
+            <legend>Vos informations</legend>
+            <div>
+            <p>
+                <label for="name">Nom</label><input type="text" name="infos" id="name" placeholder=" Nom" />
+                <label for="phone"> Télephone</label><input type="tel" name="infos" id="phone"
+                    placeholder=" Téléphone" maxlength="10" />
+                <label for="company">Société</label><input type="text" name="infos" id="company"
+                    placeholder=" Société" />
+            </p>
+            <p>
+                <label for="firstname">Prénom</label><input type="text" name="infos" id="firstname"
+                    placeholder=" Prénom" />
+                <label for="mail">Email</label><input type="text" name="infos" id="mail" placeholder=" Email" />
+                <label for="office">Fonction</label><input type="text" name="infos" id="office"
+                    placeholder=" Ex: cuisinier" />
+            </p>
+            </div>
+        </fieldset>
+
+        <div class="upload">
+            <label for="file" class="label-file">Upload</label>
+            <input id="file" class="input-file" type="file">
+            <p>Choose your files</p>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6LfcUQsaAAAAABGnmuMrzrUxdotkW-yw6EUlQ4P2"></div>
+
+        <fieldset class="area">
+            <p>
+                <label for="object">Objet</label><br />
+                <select name="object" id="object">
+                    <option value="select"> -</option>
+                    <option value="object1">Réclamations</option>
+                    <option value="object2">Laisser un avis</option>
+                    <option value="other">Autre</option>
+                </select>
+            </p>
+            <p>
+                <label for="writing">Message</label><br />
+                <textarea name="writing" id="writing" maxlength="500" placeholder=" Maximum 500 caractères"></textarea>
+            </p>
+        </fieldset>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.8354071195654!2d2.434611997620775!3d48.78503244679533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67344bd2d57f1%3A0x2a84a845271b523a!2sAFPA!5e0!3m2!1sfr!2sfr!4v1608285882766!5m2!1sfr!2sfr"
+            width="940" min-height="500" frameborder="0" style="border:0; margin-top: 10%" allowfullscreen="" aria-hidden="false"
+            tabindex="0" class="img-fluid"></iframe>
+
+        <div class="send">
+            <input type="submit" value="Envoyer" id="valid" />
+        </div>
+
+    </form>
+
+    <footer>
+
+        <div class="card d-flex p-0 m-0" style="border: none">
+            <img src="../img/foot.jpg" class="img-fluid" id="cover" alt="cover" style="align-self: center">
+            <div class="card-img-overlay p-0">
+                <p class="text-center text-foot1">Bon appétit</p>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-between align-items-center px-4 my-4">
+            <div style="flex: 1"><img src="../img/logo.png" class="img-fluid logo_footer" /></div>
+
+            <div class="col d-flex justify-content-center align-items-center social-link" style="flex: 4">
+                <a href=""><img src="../img/twit.png" /></a>
+                <a href=""><img src="../img/fb.png" /></a>
+                <a href=""><img src="../img/inst.png" /></a>
+            </div>
+
+            <p class="copyright" style="flex: 1">Copyright 2020 BienManger.com</p>
+        </div>
+
+    </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>
