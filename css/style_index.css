@@ -62,7 +62,7 @@ body {
 #titre-bann {
     position: absolute;
     z-index: 5;
-    padding-top: 4%;
+    padding: 4%;
     width: -webkit-fill-available;
     text-shadow: 0 0 10px #373737;
 }
@@ -227,72 +227,47 @@ footer .card-img-overlay {
 
 /*media*/
 
-    @media all and (max-width: 992px) {
-    .navbar-nav a:after {
-        display: none;
-    }
-    #home::after {
-        display: none;
-    }
-    .text-head1 {
-        margin: 0;
-        font-size: medium;
-        letter-spacing: 0.1px;
-        color: aliceblue;
-    }
-    .text-head2 {
-        text-align: center;
-        font-size: x-large;
-        letter-spacing: 0.2px;
-        color: aliceblue;
-    }
-    .article p {
-        font-size: 25px;
-    }
-    .button {
-        padding: 20px 60px 20px 60px;
-        font-size: 40px;
-    }
-    .button:hover {
-        padding: 18px 58px 18px 58px;
-        font-size: 40px;
-    }
-    .text-foot1 {
-        text-align: center;
-        font-size: x-large;
-        letter-spacing: 0.2px;
-        color: aliceblue;
-    }
-    .copyright {
-        font-size: small;
-    }
-
+@media all and (max-width: 768px) {
     .flip-box-back {
-        font-size: small;
+        font-size: x-small;
         word-break: break-all;
     }
     .mainbot1 {
-        font-size: medium;
-        max-height: 250px;;
+        font-size: small;
     }
     .mainbot2 {
-        font-size: medium;
+        font-size: small;
         word-break: break-all;
-        max-height: 250px;
+        max-height: 400px;
     }
     .mainbot1 form {
         flex-direction: column;
         align-items: center;
     }
-    .carousel-caption h5 {
-        font-size: large;
-    }
-    .carousel-caption p {
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .flip-box-back {
         font-size: medium;
+        word-break: break-all;
+    }
+    .mainbot1 {
+        font-size: medium;
+        word-break: break-all;
+        max-height: 400px;
+    }
+    .mainbot1 form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainbot2 {
+        font-size: medium;
+        word-break: break-all;
+        max-height: 400px;
     }
 }
 
-@media all and (min-width: 1200px) and (max-width: 2160px) {
+@media all and (min-width: 1200px) {
     .navbar-nav a {
         font-size: large;
     }
@@ -308,9 +283,9 @@ footer .card-img-overlay {
     .copyright {
         font-size: 30px;
     }
+
     main {
         grid-template-columns: 5% 1fr 1fr 5%;
-        max-height: 1080px;
     }
     .carousel-caption h5 {
         font-size: x-large;
@@ -318,22 +293,17 @@ footer .card-img-overlay {
     .carousel-caption p {
         font-size: large;
     }
-    .flip-box-back {
-        font-size: large;
-        word-break: break-all;
+}
+
+@media all and (min-width: 1200px) and (max-width: 2160px) {
+    main {
+        max-height: 1080px;
     }
-    .mainbot1 {
-        font-size: x-large;
-        word-break: break-all;
-        max-height: 400px;
+    .mainleft img {
+        height: 1080px;
     }
-    .mainbot1 form {
-        flex-direction: column;
-        align-items: center;
-    }
-    .mainbot2 {
-        font-size: x-large;
-        max-height: 400px;
+    .mainright img {
+        height: 1080px;
     }
 }
 
@@ -369,7 +339,7 @@ footer .card-img-overlay {
     }
 }
 
-@media all and (min-width: 2160px) and (max-width: 4096px) {
+@media all and (min-width: 2560px) and (max-width: 4096px) {
     main {
         max-height: 1440px;
     }

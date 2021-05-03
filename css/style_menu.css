@@ -195,26 +195,51 @@ footer {
 /*media*/
 
 @media all and (max-width: 992px) {
+    .navbar {
+        height: 200px;
+    }
     .navbar-nav a:after {
         display: none;
+    }
+    #navbarNavAltMarkup{
+        background-color: white !important;
+        margin: 0;
     }
     #home::after {
         display: none;
     }
+    .card img{
+        min-height: 600px;
+    }
+    #titre-bann{
+        margin-top: 10%;
+    }
     .text-head1 {
         margin: 0;
-        font-size: medium;
+        font-size: 2.5em !important;
         letter-spacing: 0.1px;
         color: aliceblue;
     }
     .text-head2 {
         text-align: center;
-        font-size: x-large;
+        font-size: 3em;
         letter-spacing: 0.2px;
         color: aliceblue;
     }
+    .text-foot1 {
+        text-align: center;
+        font-size: 4em;
+        letter-spacing: 0.2px;
+        color: aliceblue;
+    }
+    .copyright {
+        font-size: 1.5em;
+    }
     .article p {
         font-size: 25px;
+    }
+    .article:hover{
+        transform: scale(1.1);
     }
     .button {
         padding: 20px 60px 20px 60px;
@@ -223,15 +248,6 @@ footer {
     .button:hover {
         padding: 18px 58px 18px 58px;
         font-size: 40px;
-    }
-    .text-foot1 {
-        text-align: center;
-        font-size: x-large;
-        letter-spacing: 0.2px;
-        color: aliceblue;
-    }
-    .copyright {
-        font-size: small;
     }
 }
 

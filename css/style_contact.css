@@ -271,42 +271,100 @@ footer{
 /*media*/
 
 @media all and (max-width: 992px) {
+    .navbar {
+        height: 200px;
+    }
     .navbar-nav a:after {
         display: none;
+    }
+    #navbarNavAltMarkup{
+        background-color: white !important;
+        margin: 0;
     }
     #home::after {
         display: none;
     }
+    .card img{
+        min-height: 600px;
+    }
+    #titre-bann{
+        margin-top: 10%;
+    }
     .text-head1 {
         margin: 0;
-        font-size: medium;
+        font-size: 2.5em !important;
         letter-spacing: 0.1px;
         color: aliceblue;
     }
     .text-head2 {
         text-align: center;
-        font-size: x-large;
+        font-size: 3em;
         letter-spacing: 0.2px;
         color: aliceblue;
     }
-
-    #valid{
-        font-size: medium;
-        padding: 10px 25px 10px 25px;
+    .text-foot1 {
+        text-align: center;
+        font-size: 4em;
+        letter-spacing: 0.2px;
+        color: aliceblue;
     }
-
-    #valid:hover{
+    .copyright {
+        font-size: 1.5em;
+    }
+    #valid{
+        width: 35%;
+        height: 90px;
+        font-size: xx-large;
+    }
+    #valid:hover {
         padding: 8px 23px 8px 23px;
     }
-
-    .upload label{
-        padding: 10px 25px;
-        font-size: large;
+    form {
+        grid-template-columns: 15% 1fr 15%;
     }
-    
+    label {
+        font-size: 2em !important;
+        margin-bottom: 5% !important;
+    }
+    legend{
+        font-size: 2.5em !important;
+        text-align: center;
+    }
+    ::placeholder{
+        font-size: 2em !important;
+    }
+    .infos {
+        text-align: center;
+    }
+    .infos p{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .infos input{
+        width: 100% !important;
+        height: 80px !important;
+    }
+    .infos div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .upload label{
+        width: 35%;
+        height: 90px;
+        font-size: xx-large;
+        padding: 10px 25px 10px 25px;
+    }
     .upload label:hover{
         padding: 8px 23px;
         font-size: large;
+    }
+    .upload p{
+        font-size: 2em;
+    }
+    iframe{
+        min-height: 500px;
     }
 }
 
